@@ -1,0 +1,26 @@
+//{
+//  "gender": "Male",
+//  "age": "18",
+//  "contactInfo": {
+//    "emailAddress": "fei@qq.com",
+//    "phoneNo": "1861132413"
+//  }
+//}
+{
+  "foo": {
+    "gender": "Male",
+    "age": "18",
+    "contactInfo": {
+      "emailAddress": "foo1@outlook.com",
+      "phoneNo": "123"
+    }
+  },
+  "bar": {
+    "gender": "Female",
+    "age": "25",
+    "contactInfo": {
+      "emailAddress": "bar1@outlook.com",
+      "phoneNo": "456"
+    }
+  }
+}
