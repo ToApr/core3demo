@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dto", "Dto\Dto.csproj", "{1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{0A7888A1-FF80-4F61-8211-A54A340182B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspectCoreDemo", "AspectCoreDemo\AspectCoreDemo.csproj", "{32A5BD75-8DCE-4979-B8C9-88E6EBB0941E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{1DBC96B2-5A25-42BF-A055-F9E0FB70B235}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DBC96B2-5A25-42BF-A055-F9E0FB70B235}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DBC96B2-5A25-42BF-A055-F9E0FB70B235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A5BD75-8DCE-4979-B8C9-88E6EBB0941E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A5BD75-8DCE-4979-B8C9-88E6EBB0941E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A5BD75-8DCE-4979-B8C9-88E6EBB0941E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A5BD75-8DCE-4979-B8C9-88E6EBB0941E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
