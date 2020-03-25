@@ -28,7 +28,7 @@ namespace AspectCoreDemo
         public void ConfigureServices(IServiceCollection services)
         {
             
-            services.AddTransient<IStudentService, StudentService>();
+           // services.AddTransient<IStudentService, StudentService>();
             services.AddControllersWithViews(optinons=> {
                // optinons.Filters.Add(typeof(CustomInterceptorAttribute));
             });
