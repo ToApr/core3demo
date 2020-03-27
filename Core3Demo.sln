@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspectCoreDemo", "AspectCor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{77E9EA18-5958-46ED-A10A-D6AA1E0F34B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicorServices.Demo", "MicorServices.Demo\MicorServices.Demo.csproj", "{FE26C76E-0B8E-4CD1-9E37-C84ECD7F7831}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicorServices.Demo", "MicorServices.Demo\MicorServices.Demo.csproj", "{FE26C76E-0B8E-4CD1-9E37-C84ECD7F7831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PollyDemo", "PollyDemo\PollyDemo.csproj", "{A8EF6752-E0C8-4544-9D7B-CB23E3550B00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{FE26C76E-0B8E-4CD1-9E37-C84ECD7F7831}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE26C76E-0B8E-4CD1-9E37-C84ECD7F7831}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE26C76E-0B8E-4CD1-9E37-C84ECD7F7831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8EF6752-E0C8-4544-9D7B-CB23E3550B00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8EF6752-E0C8-4544-9D7B-CB23E3550B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8EF6752-E0C8-4544-9D7B-CB23E3550B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8EF6752-E0C8-4544-9D7B-CB23E3550B00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
