@@ -104,6 +104,12 @@ namespace OptionsDemo
 
         public static async Task Main(string[] args)
         {
+
+
+        
+            Console.WriteLine(typeof(string).Assembly.FullName);
+            Console.WriteLine(typeof(int).Assembly.FullName);
+            Console.ReadLine();
             string s =await call1();
             Console.WriteLine(s);
             Console.ReadLine();
