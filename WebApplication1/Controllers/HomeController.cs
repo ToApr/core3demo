@@ -13,9 +13,26 @@ namespace WebApplication1.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public OperationService OperationService { get; }
+        public IOperationTransient TransientOperation { get; }
+        public IOperationScoped ScopedOperation { get; }
+        public IOperationSingleton SingletonOperation { get; }
+        public IOperationSingletonInstance SingletonInstanceOperation { get; }
+
+
+        public HomeController(ILogger<HomeController> logger, OperationService operationService,
+        IOperationTransient transientOperation,
+        IOperationScoped scopedOperation,
+        IOperationSingleton singletonOperation,
+        IOperationSingletonInstance singletonInstanceOperation
+        )
         {
             _logger = logger;
+            OperationService = operationService;
+            TransientOperation = transientOperation;
+            ScopedOperation = scopedOperation;
+            SingletonOperation = singletonOperation;
+            SingletonInstanceOperation = singletonInstanceOperation;
         }
 
         public IActionResult Index()

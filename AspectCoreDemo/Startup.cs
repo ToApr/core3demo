@@ -34,18 +34,23 @@ namespace AspectCoreDemo
             });
           
         }
-        //Auto fac ×¢Èë
-        public void ConfigureContainer(ContainerBuilder builder)
+        public void ConfigureContainer(IServiceCollection builder)
         {
-            builder.RegisterType<CustomInterceptorAttribute>();  //×¢²áÀ¹½ØÆ÷
-            builder.RegisterAssemblyTypes(Assembly.Load("Service"))
-             .AsImplementedInterfaces()
-             .EnableInterfaceInterceptors();
-            builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly())
-              .AsImplementedInterfaces()
-              .EnableInterfaceInterceptors();
+            Console.WriteLine("Ô¼¶¨Ö´ÐÐ¡£¡£¡£ConfigureContainer");
         }
-      
+
+        //Auto fac ×¢Èë
+        //public void ConfigureContainer(ContainerBuilder builder)
+        //{
+        //    builder.RegisterType<CustomInterceptorAttribute>();  //×¢²áÀ¹½ØÆ÷
+        //    builder.RegisterAssemblyTypes(Assembly.Load("Service"))
+        //     .AsImplementedInterfaces()
+        //     .EnableInterfaceInterceptors();
+        //    builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly())
+        //      .AsImplementedInterfaces()
+        //      .EnableInterfaceInterceptors();
+        //}
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
