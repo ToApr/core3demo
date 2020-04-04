@@ -25,6 +25,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicorServices.Demo", "Micor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PollyDemo", "PollyDemo\PollyDemo.csproj", "{A8EF6752-E0C8-4544-9D7B-CB23E3550B00}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ElsaWorkFlowDemo", "ElsaWorkFlowDemo", "{CE20ED8E-1AC7-42A1-86C2-B1D387E14EF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElsaDemo", "ElsaDemo\ElsaDemo.csproj", "{46F33A15-B1DB-4DBD-8F4F-53ADBE218C8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +71,10 @@ Global
 		{A8EF6752-E0C8-4544-9D7B-CB23E3550B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8EF6752-E0C8-4544-9D7B-CB23E3550B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8EF6752-E0C8-4544-9D7B-CB23E3550B00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46F33A15-B1DB-4DBD-8F4F-53ADBE218C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F33A15-B1DB-4DBD-8F4F-53ADBE218C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46F33A15-B1DB-4DBD-8F4F-53ADBE218C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46F33A15-B1DB-4DBD-8F4F-53ADBE218C8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +84,7 @@ Global
 		{1DBC96B2-5A25-42BF-A055-F9E0FB70B235} = {0A7888A1-FF80-4F61-8211-A54A340182B2}
 		{32A5BD75-8DCE-4979-B8C9-88E6EBB0941E} = {0A7888A1-FF80-4F61-8211-A54A340182B2}
 		{FE26C76E-0B8E-4CD1-9E37-C84ECD7F7831} = {77E9EA18-5958-46ED-A10A-D6AA1E0F34B2}
+		{46F33A15-B1DB-4DBD-8F4F-53ADBE218C8B} = {CE20ED8E-1AC7-42A1-86C2-B1D387E14EF7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5E48E15-A82E-4A76-8D3F-17DEB2FF1D0E}
