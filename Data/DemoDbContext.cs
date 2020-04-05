@@ -8,10 +8,11 @@ namespace Data
 {
   public   class DemoDbContext:DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public DemoDbContext(DbContextOptions<DemoDbContext> options) : base(options)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;database=EFCoreDemo;Integrated Security=true;");
+
         }
+        
 
         public DbSet<Student> Students { get; set; }
     }
