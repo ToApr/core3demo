@@ -33,7 +33,6 @@ namespace ElsaDemo
           // Add services used for the workflows runtime.
           .AddElsa(elsa => elsa.AddEntityFrameworkStores<SqlServerContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SqlServer"))))
 //.AddElsa(elsa => elsa.AddEntityFrameworkStores<SqliteContext>(options => options.UseSqlite(Configuration.GetConnectionString("Sqlite"))))
-
 .AddHttpActivities(options => options.Bind(Configuration.GetSection("Elsa:Http")))
                 .AddEmailActivities(options => options.Bind(Configuration.GetSection("Elsa:Smtp")))
                 .AddTimerActivities(options => options.Bind(Configuration.GetSection("Elsa:Timers")))
