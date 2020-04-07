@@ -1,13 +1,12 @@
-{
-  "profiles": {
-    "WebApi1": {
+﻿{
+"profiles": {
+    "WebApp2": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "applicationUrl": "http://localhost:5002",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "http://localhost:5001"
+      }
     }
   }
 }

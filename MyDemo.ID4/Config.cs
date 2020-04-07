@@ -2,6 +2,7 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using IdentityServer4;
 using IdentityServer4.Models;
 using System.Collections.Generic;
 
@@ -34,7 +35,7 @@ namespace MyDemo.ID4
                   AllowedGrantTypes= GrantTypes.ClientCredentials,
                   ClientSecrets={ new Secret("console client".Sha256()) },
                   AllowedScopes={ "api1"}
-                
+
                 },
                 // client credentials flow client
                 new Client
@@ -49,22 +50,22 @@ namespace MyDemo.ID4
                 },
 
                 // MVC client using code flow + pkce
-                new Client
-                {
-                    ClientId = "mvc",
-                    ClientName = "MVC Client",
+                //new Client
+                //{
+                //    ClientId = "mvc",
+                //    ClientName = "MVC Client",
 
-                    AllowedGrantTypes = GrantTypes.CodeAndClientCredentials,
-                    RequirePkce = true,
-                    ClientSecrets = { new Secret("49C1A7E1-0C79-4A89-A3D6-A37998FB86B0".Sha256()) },
+                //    AllowedGrantTypes = GrantTypes.CodeAndClientCredentials,
+                //    RequirePkce = true,
+                //    ClientSecrets = { new Secret("49C1A7E1-0C79-4A89-A3D6-A37998FB86B0".Sha256()) },
 
-                    RedirectUris = { "http://localhost:5003/signin-oidc" },
-                    FrontChannelLogoutUri = "http://localhost:5003/signout-oidc",
-                    PostLogoutRedirectUris = { "http://localhost:5003/signout-callback-oidc" },
+                //    RedirectUris = { "http://localhost:5003/signin-oidc" },
+                //    FrontChannelLogoutUri = "http://localhost:5003/signout-oidc",
+                //    PostLogoutRedirectUris = { "http://localhost:5003/signout-callback-oidc" },
 
-                    AllowOfflineAccess = true,
-                    AllowedScopes = { "openid", "profile", "api1" }
-                },
+                //    AllowOfflineAccess = true,
+                //    AllowedScopes = { "openid", "profile", "api1" }
+                //},
 
                 // SPA client using code flow + pkce
                 new Client
@@ -89,6 +90,30 @@ namespace MyDemo.ID4
                     AllowedCorsOrigins = { "http://localhost:5002" },
 
                     AllowedScopes = { "openid", "profile", "api1" }
+                },new Client
+                {
+                     ClientId="mvc",
+                     ClientName="mvc",
+                     ClientSecrets= { new Secret("mvc".Sha256()) },
+                       AllowedGrantTypes = GrantTypes.Code,
+                        RequireConsent = false,
+                        RequirePkce = true,
+                       // where to redirect to after login
+                        RedirectUris = { "http://localhost:5002/signin-oidc" },
+                        FrontChannelLogoutUri = "http://localhost:5002/signout-oidc",
+                        // where to redirect to after logout
+                        PostLogoutRedirectUris = { "http://localhost:5002/signout-callback-oidc" },
+                        AccessTokenLifetime=600,
+                     
+                        AlwaysIncludeUserClaimsInIdToken = true,
+                        AllowOfflineAccess = true, // offline_access
+                        AllowedScopes = new List<string>
+                        {
+                            IdentityServerConstants.StandardScopes.OpenId,
+                            IdentityServerConstants.StandardScopes.Profile,
+                            "api1"
+                        },
+                       
                 }
             };
     }
